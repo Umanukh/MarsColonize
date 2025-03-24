@@ -4,10 +4,10 @@
 <div class="container mt-5">
     {% if 'инженер' in prof or 'строитель' in prof %}
         <h2>Инженерные тренажеры</h2>
-        <img src="{{ url_for('static', filename='engineer_scheme.jpg') }}" alt="Схема инженерных тренажеров" class="img-fluid">
+        <img src="{{ url_for('static', filename='spaceshipplan.png') }}" alt="Схема инженерных тренажеров" class="img-fluid">
     {% else %}
         <h2>Научные симуляторы</h2>
-        <img src="{{ url_for('static', filename='science_scheme.jpg') }}" alt="Схема научных симуляторов" class="img-fluid">
+        <img src="{{ url_for('static', filename='plan_of_the_spaceship.png') }}" alt="Схема научных симуляторов" class="img-fluid">
     {% endif %}
 </div>
 {% endblock %}
